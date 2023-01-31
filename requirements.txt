@@ -1,0 +1,5 @@
+flask
+numpy
+pillow
+fastbook
+gunicorn==19.9.0
