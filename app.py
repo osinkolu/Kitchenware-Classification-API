@@ -7,7 +7,7 @@ Github repo: https://github.com/osinkolu
 
 """
 
-from fastbook import load_learner #the only thing we need from fastai is its load learner in fastbook
+from fastai.learner import load_learner #the only thing we need from fastai is its load learner in fastbook
 from flask import Flask, request, jsonify # Use Flask to manage ag
 import numpy as np
 from PIL import Image
@@ -16,10 +16,10 @@ from PIL import Image
 #########################
 # For us windows users - Redirect poxipath
 
-#import pathlib
+import pathlib
 
-#temp = pathlib.PosixPath
-#pathlib.PosixPath = pathlib.WindowsPath
+temp = pathlib.PosixPath
+pathlib.PosixPath = pathlib.WindowsPath
 
 #########################
 
